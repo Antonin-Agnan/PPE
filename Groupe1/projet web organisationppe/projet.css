@@ -1,0 +1,121 @@
+html{
+	background-color:grey;
+}
+
+body{
+	margin-left:15%;
+    margin-right:15%;
+    background-color:white;	
+	position:relative;
+	height:950px;
+}
+.bandeau{
+	position: relative;
+    background-image:url('bandeau1.png');
+    width:100%;
+    height:170px;
+	background-repeat:no-repeat;
+}
+.nom{
+	position: absolute;
+    margin-left:1%;
+    bottom: 20%;
+}
+.prenom{
+	position: absolute;
+    margin-left:1%;
+    bottom: 50%;
+}
+.num{
+	position: absolute;
+    margin-left:1%;
+    bottom: 80%;
+}
+#domaine
+{
+	position: absolute;
+    margin-left:91%;
+    bottom: 15%;
+	
+	
+}
+nav{
+    width:170px;
+	position: absolute;
+   	border-right: 1px solid;
+	z-index: 0;
+	height:82%;
+  }
+nav li {
+	padding-left:9px;
+	padding-bottom:20px;
+	font-size:25px;
+	list-style-type: none; 
+	margin-top:5px;
+  }
+  
+nav a {
+	position: block;
+    text-decoration: none;
+	color: inherit;
+  }
+nav > li:hover{
+background-color:red;	
+margin-right:6px;
+
+}
+nav >li:active{
+color:light-blue;	
+}
+#dInscription,#dLundi,#SOS,#dMardi,#dMercredi,#dJeudi,#tableau
+{
+height:400px;
+margin-left:17%;	
+}
+.tabl1 thead,tfoot {
+     font-size: 20px;
+	 background-color: #333;
+     color: #fff;
+	
+}
+.haut{
+font-size:21px;	
+font-weight:bold;
+}
+.bas{
+font-size:18px;
+font-weight:bold;
+}
+
+.ho{
+text-align:center;
+	color:red;
+padding-bottom:5%;
+padding-left:5%;
+}
+.hoo{
+text-align:center;	
+padding-bottom:5%;
+font-size:22px;
+font-weight:bold;
+padding-right:10%;
+}
+.hooo{
+text-align:center;
+padding-bottom:5%;
+padding-right:20%;	
+}
+
+.tabl1 td {
+    border: 1px solid #333;
+	text-align:center;
+}
+
+.tableau tr{
+border:0;		
+}
+
+
+#total{
+display:none;
+}

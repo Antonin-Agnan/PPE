@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html       PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<html>
+	<head>
+		<title>Organisation</title>
+		  <link rel="stylesheet" type="text/css" href="projet.css" media="all" />
+		  <script type="text/javascript" src="javaa.js"></script>
+	</head>
+<body>
+<div class="bandeau">
+   <a class="nom">nom</a>
+   <a class="prenom">prenom</a>
+   <a class="num">numLicence</a>
+      <multiple="multiple" id="domaine">
+	    <option>15/05/2019</option>
+        <option>18/05/2019</option>
+        <option>05/06/2019</option>
+        <option>10/06/2019</option>
+      </select><br></br>
+</div>
+<nav>  
+    <li><a onclick="Lundi()" href="#Lundi">Lundi</a></li>
+    <li><a onclick="Mardi()" href="#Mardi">Mardi</a></li>
+    <li><a onclick="Mercredi()" href="#Mercredi">Mercredi</a></li>
+	<li><a onclick="Jeudi()" href="#Jeudi">Jeudi</a></li>
+	<li><a onclick="Inscriptions()" href="#Inscriptions">Mes inscriptions</a></li>
+    <li><a onclick="tableau()" href="#tableau">s'inscrire</a></li>
+</nav>
+<div id="total">
+<div id="dLundi">
+<fieldset>
+    <legend align="center">Tournoi du lundi</legend>
+      <a>nom du tournoi:</a><a>probridger</a></br>
+	  <a>date du tournoi:</a><a>15/05/2020</a></br>
+	  <a>êtes vous tout seul?(SOS)</a>
+	  <input type="button" onclick="SOSoui()" id="oui" name="subscribe" value="oui"></input>
+	  <input type="button" onclick="SOSnon()"   id="non" name="subscribe" value="non"></input>
+<div id="SOS">
+<table class="SOS">
+<h2>Membres SOS</h2>
+   <tr>
+            <td>nom</td>
+            <td>prenom</td>
+			<td>numLicence</td>
+			<td>mail</td>
+			<td>telephone</td>
+			<td>niveauUtilisateur</td>
+			<td>sélectionner</td>
+   </tr>
+    <tr>
+            <td>Norbert</td>
+            <td>Gille</td>
+			<td>98743256</td>
+			<td>Norbert.Gille@commisd'office.fr</td>
+			<td>0652334448</td>
+			<td>hyper fort</td>
+			<td><input type="checkbox" id="non" name="subscribe" value="Valider"></td>
+   </tr>
+</table>
+ <input type="button" onclick="valide()"   id="non" name="subscribe" value="Valider"></input>
+  
+</div>
+<div id="noSOS">
+<h2>Ajouter un équipier</h2>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="Serre" autofocus="" required=""><br></br></input>
+	  <label for="prenom">Prenom <em>*</em></label>
+      <input id="prenom" placeholder="Olivier" autofocus="" required=""><br></br></input>
+	  <label for="telephone">Numéro de licence<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="54xxxxxx" pattern="06[0-9]{8}"><br></br></input>
+      <label for="telephone">Portable<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br></br></input>
+	  <label for="telephone">Mail<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="xxxxxx@xxx.xx" pattern="06[0-9]{8}"><br></br></input>
+	  <input type="button" onclick="valider()"   id="non" name="subscribe" value="Valider"></input>
+	
+</div>
+</fieldset>
+</div>
+<div id="dMardi">
+<fieldset>
+    <legend align="center">Tournoi du Mardi</legend>
+      <a>nom du tournoi:</a><a>probridger</a></br>
+	  <a>date du tournoi:</a><a>15/05/2020</a></br>
+	  <a>êtes vous tout seul?(SOS)</a>
+	  <input type="button" onclick="SOSouiMardi()" id="oui" name="subscribe" value="oui"></input>
+	  <input type="button" onclick="SOSnonMardi()"   id="non" name="subscribe" value="non"></input>
+<div id="SOSMardi">
+<table class="SOS">
+<h2>Membres SOS</h2>
+   <tr>
+            <td>nom</td>
+            <td>prenom</td>
+			<td>numLicence</td>
+			<td>mail</td>
+			<td>telephone</td>
+			<td>niveauUtilisateur</td>
+			<td>sélectionner</td>
+   </tr>
+    <tr>
+            <td>Norbert</td>
+            <td>Gille</td>
+			<td>98743256</td>
+			<td>Norbert.Gille@commisd'office.fr</td>
+			<td>0652334448</td>
+			<td>hyper fort</td>
+			<td><input type="checkbox"  id="non" name="subscribe" value="Valider"></td>
+   </tr>
+</table>
+ <input type="button" onclick="valideMardi()"   id="non" name="subscribe" value="Valider"></input>
+ 
+</div>
+<div id="noSOSMardi">
+<h2>Ajouter un équipier</h2>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="Serre" autofocus="" required=""><br></br></input>
+	  <label for="prenom">Prenom <em>*</em></label>
+      <input id="prenom" placeholder="Olivier" autofocus="" required=""><br></br></input>
+	   <label for="telephone">Numéro de licence<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="54xxxxxx" pattern="06[0-9]{8}"><br></br></input>
+      <label for="telephone">Portable<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br></br></input>
+	  <label for="telephone">Mail<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="xxxxxx@xxx.xx" pattern="06[0-9]{8}"><br></br></input>
+	  <input type="button" onclick="validerMardi()"   id="non" name="subscribe" value="Valider"></input>
+
+</div>
+</fieldset>
+</div>
+
+<div id="dMercredi">
+<fieldset>
+    <legend align="center">Partie libre du Mercredi</legend>
+      <a>nom du tournoi:</a><a>probridger</a></br>
+	  <a>date du tournoi:</a><a>15/05/2020</a></br>
+	  <a>Etes vous un tuteur?</a>
+	  <input type="button" onclick="ouiTuteurMercredi()" id="oui" name="subscribe" value="oui">
+	  <input type="button" onclick="nonTuteurMercredi()"   id="non" name="subscribe" value="non"></br>
+	  <input type="button" onclick="valider()"   id="non" name="subscribe" value="Valider"></input>
+</fieldset>
+</div> 
+<div id="dJeudi">
+<fieldset>
+ <legend align="center">Tournoi du jeudi</legend>
+	<input type="button" onclick="par4Jeudi()" id="oui" name="subscribe" value="4">
+	<input type="button" onclick="par2Jeudi()"   id="non" name="subscribe" value="2">
+    <div id="jeudi_4">
+      <a>nom du tournoi:</a><a>probridger</a></br>
+	  <a>date du tournoi:</a><a>15/05/2020</a></br>
+	  <a>êtes vous tout seul?(SOS)</a>
+	  <input type="button" onclick="SOSouiJeudi_4()" id="oui" name="subscribe" value="oui">
+	  <input type="button" onclick="SOSnonJeudi_4()"   id="non" name="subscribe" value="non">
+	 <div id="SOSJeudi_4">
+<table class="SOS">
+<h2>Membres SOS</h2>
+<a> Veuillez selectionner 3 membres</a>
+   <tr>
+            <td>nom</td>
+            <td>prenom</td>
+			<td>numLicence</td>
+			<td>mail</td>
+			<td>telephone</td>
+			<td>niveauUtilisateur</td>
+			<td>sélectionner</td>
+   </tr>
+    <tr>
+            <td>Norbert</td>
+            <td>Gille</td>
+			<td>98743256</td>
+			<td>Norbert.Gille@commisd'office.fr</td>
+			<td>0652334448</td>
+			<td>hyper fort</td>
+			<td><input type="checkbox" id="non" name="subscribe" value="Valider"></td>
+   </tr>
+</table>
+ <input type="button" onclick="valideJeudi/4()"   id="non" name="subscribe" value="Valider">
+</div>
+<div id="noSOSJeudi_4">
+<h2>Ajouter un équipier</h2>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="Serre" autofocus="" required=""><br></br></input>
+	  <label for="prenom">Prenom <em>*</em></label>
+      <input id="prenom" placeholder="Olivier" autofocus="" required=""><br></br></input>
+	   <label for="telephone">Numéro de licence<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="54xxxxxx" pattern="06[0-9]{8}"><br></br></input>
+      <label for="telephone">Portable<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br></br></input>
+	  <label for="telephone">Mail<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="xxxxxx@xxx.xx" pattern="06[0-9]{8}"><br></br></input>
+	  <input type="button" onclick="validerJeudi/4()"   id="non" name="subscribe" value="Valider">
+	   </br>
+	   <a>Avez vous une equipe?</a>
+	   <input type="button" onclick="ouiEquipeJeudi()" id="oui" name="subscribe" value="oui">
+	   <input type="button" onclick="nonEquipeJeudi()" id="non" name="subscribe" value="non">
+	   </br>
+	   <div id="ouiEquipeJeudi">
+			<a>tableau des inscrits</a>
+			 </br>
+			<input type="button"   id="non" name="subscribe" value="Valider">
+	   </div>
+	   <div id="nonEquipeJeudi">
+			<a>Votre equipe sera decidée sur place</a> 
+			 </br>
+			<input type="button"   id="non" name="subscribe" value="Valider">
+	   </div>
+
+	  
+</div>
+	  
+</div>
+<div id="jeudi_2">
+
+ <a>nom du tournoi:</a><a>probridger</a></br>
+	  <a>date du tournoi:</a><a>15/05/2020</a></br>
+	  <a>êtes vous tout seul?(SOS)</a>
+	  <input type="button" onclick="SOSouiJeudi_2()" id="oui" name="subscribe" value="oui"></input>
+	  <input type="button" onclick="SOSnonJeudi_2()"   id="non" name="subscribe" value="non"></input>
+<div id="SOSJeudi_2">
+<table class="SOS">
+<h2>Membres SOS</h2>
+   <tr>
+            <td>nom</td>
+            <td>prenom</td>
+			<td>numLicence</td>
+			<td>mail</td>
+			<td>telephone</td>
+			<td>niveauUtilisateur</td>
+			<td>sélectionner</td>
+   </tr>
+    <tr>
+            <td>Norbert</td>
+            <td>Gille</td>
+			<td>98743256</td>
+			<td>Norbert.Gille@commisd'office.fr</td>
+			<td>0652334448</td>
+			<td>hyper fort</td>
+			<td><input type="checkbox" id="non" name="subscribe" value="Valider"></td>
+   </tr>
+</table>
+ <input type="button" onclick="valide()"   id="non" name="subscribe" value="Valider"></input>
+  
+</div>
+<div id="noSOSJeudi_2">
+<h2>Ajouter un équipier</h2>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="Serre" autofocus="" required=""><br></br></input>
+	  <label for="prenom">Prenom <em>*</em></label>
+      <input id="prenom" placeholder="Olivier" autofocus="" required=""><br></br></input>
+	  <label for="telephone">Numéro de licence<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="54xxxxxx" pattern="06[0-9]{8}"><br></br></input>
+      <label for="telephone">Portable<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br></br></input>
+	  <label for="telephone">Mail<em>*</em></label>
+      <input id="telephone" type="tel" placeholder="xxxxxx@xxx.xx" pattern="06[0-9]{8}"><br></br></input>
+	  <input type="button" onclick="valider()"   id="non" name="subscribe" value="Valider"></input>
+	
+</div>
+
+
+
+</div>
+
+</fieldset>
+</div>
+
+<div id="dInscription">
+<h3>Mes inscriptions:</h3>
+<table class="tabl1">
+        <thead>
+		 <tr>
+		    <td>jour tournois</td>
+            <td>date tournois</td>
+            <td>heure tournois</td>
+			<td colspan="3">lieu</td>
+			<td>type tournois</td>
+			<td>niveau tournois</td>
+			<td>équipier</td>
+			<td>se désinscrire</td>
+         </tr>
+		</thead>
+		<tr>
+		    <td>lundi</td>
+            <td>15/08/2019</td>
+            <td>15h30</td>
+			<td>rue des potiers</td>
+			<td>Paris</td>
+			<td>75000</td>
+			<td>paire</td>
+			<td>débutant</td>
+			<td>Norbert Tarayre</td>
+			<td><input type="button" value="se désinscrire"></td>
+        </tr>
+		<tr>
+		    <td>jeudi</td>
+            <td>25/08/2019</td>
+            <td>14h30</td>
+			<td>rue des potiers</td>
+			<td>Paris</td>
+			<td>75000</td>
+			<td>par 4</td>
+			<td>professionnel</td>
+			<td>Gille Cano/Courtois</td>
+	
+			<td><input type="button" value="se désinscrire"></td>
+        </tr>	
+</table>
+</div>
+<div id="tableau">
+
+<table style="width:100%">
+         <tr>
+		    <td class="ho" colspan="5">image   Mars   image</td>
+		 </tr>
+		 <tr>
+            <td class="haut" width="20%">Tournois du lundi     </td>
+            <td class="haut" width="20%">Tournois du mardi     </td>
+			<td class="haut" width="20%">Tournois du mercredi  </td>
+			<td class="haut" width="20%">Tournois du jeudi/2   </td>
+			<td class="haut" width="20%">Tournois du jeudi/4   </td>
+         </tr>
+		<tr>
+            <td  class="bas">Je m'inscris</td>
+            <td  class="bas">Je m'inscris</td>
+			<td class="bas">Je m'inscris</td>
+			<td class="bas">Je m'inscris</td>
+			<td class="bas">Je m'inscris</td>
+        </tr>
+		<tr>
+            <td><input type="checkbox"> lundi 2</td>
+			<td><input type="checkbox"> mardi 3</td>
+			<td><input type="checkbox"> mercredi 4</td>
+			<td><input type="checkbox"> jeudi 5</td>
+
+        </tr>
+		<tr>
+            <td><input type="checkbox"> lundi 9</td>
+			<td><input type="checkbox"> mardi 10</td>
+			<td><input type="checkbox"> mercredi 11</td>
+			<td></td>
+			<td><input type="checkbox"> jeudi 12</td>
+        </tr>
+		<tr>
+            <td><input type="checkbox"> lundi 16</td>
+			<td><input type="checkbox"> mardi 17</td>
+			<td><input type="checkbox"> mercredi 18</td>
+			<td><input type="checkbox"> jeudi 19</td>
+			<td></td>
+        </tr>
+		<tr>
+            <td><input type="checkbox"> lundi 23</td>
+			<td><input type="checkbox"> mardi 24</td>
+			<td><input type="checkbox"> mercredi 25</td>
+			<td><input type="checkbox"> jeudi 26</td>
+			<td></td>
+        </tr>
+		<tr>
+		   <td class="bas">J'ai un partenaire:</td>
+		   <td class="bas">J'ai un partenaire:</td>
+		   <td class="bas">J'ai un partenaire:</td>
+		   <td class="bas">J'ai un partenaire:</td>
+		   <td class="bas">J'ai un partenaire:</td>
+		</tr>
+		<tr>
+		  <td>  <input type="radio" id="a" name="a" value="f"> <label for="f">OUI</label></td>
+		  <td>  <input type="radio" id="b" name="b" value="g"> <label for="g">OUI</label></td>
+		  <td>  <input type="radio" id="c" name="c" value="huey"> <label for="h">OUI</label></td>
+		  <td>  <input type="radio" id="d" name="d" value="huey"> <label for="i">OUI</label></td>
+		  <td>  <input type="radio" id="e" name="e" value="huey"> <label for="j">OUI</label></td>
+		</tr>
+		<tr>
+		  <td>  <input type="radio" id="f" name="a" value="a"> <label for="a">NON</label></td>
+		  <td>  <input type="radio" id="g" name="b" value="b"> <label for="b">NON</label></td>
+		  <td>  <input type="radio" id="h" name="c" value="huey"> <label for="c">NON</label></td>
+		  <td>  <input type="radio" id="i" name="d" value="huey"> <label for="d">NON</label></td>
+		  <td>  <input type="radio" id="j" name="e" value="huey"> <label for="e">NON</label></td>
+		</tr>
+		<tr>
+		  <td class="bas">Sélectionner votre partenaire</td>
+		  <td class="bas">Sélectionner votre partenaire</td>
+		  <td class="bas">Sélectionner votre partenaire</td>
+		  <td class="bas">Sélectionner votre partenaire</td>
+		  <td class="bas">Sélectionner votre partenaire</td>
+		</tr>
+
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form id="myForm" method="post" action="http://re-en-menage.lescigales.org/">
+	<p>
+	<input type="texte" name="value" value=""></br> <!-- Champ de saisis -->
+	</br>
+	<input type="submit" name="ok" value="Valider" </br> <!-- Champ de validation -->
+	</p>
+	  
+	</form>
+	  
+	</body>
+	</head>
+	</html></br>
+	  
+	<!-- Zone des conditions du Deuxième mot de passe -->
+	  
+	<?php
+	$pass_ok=$_POST['value'];
+	$pass_normal = "#F0000";
+	$pass_md5 = "f95b70fdc3088560732a5ac135644506";
+	$pass_ascii = "123";
+	  
+	  
+	if($pass_ok==$pass_normal)
+	 {
+	 header "http://re-en-menage.lescigales.org/";
+	}
+	else
+	{
+	header "http://google.com";
+	}
+	?>
+	  
+	<!-- Fin des conditions -->
+</body>
+</html>

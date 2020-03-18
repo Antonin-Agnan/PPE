@@ -1,0 +1,47 @@
+.Menu
+{
+
+	position: absolute;
+	margin-left:25%;
+	width: 10%;
+	height:500px;
+	/*border-bottom:1px;
+	border-bottom-style:solid;*/
+	text-align:left;
+	margin-top:-4px;
+}
+.menu .button
+{
+	text-align:left;
+	background-color:white;
+	width:20%;
+	height:40px;
+	border:none;
+	font-family:Times new Roman;
+	font-size:large;
+	
+}
+.contenu
+{
+	/*position: absolute;*/
+	background-color:white;
+	/*margin-right:15%;
+	margin-left:20%;
+	height: 500px;
+	width: 70%;*/
+	border-left-width:1px;
+	border-left-color:black;
+	border-left-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:black;
+	border-bottom-style:solid;
+	border-top-width:1px;
+	border-top-color:black;
+	border-top-style:solid;
+	border-right-width:1px;
+	border-right-color:black;
+	border-right-style:solid;
+	/*text-align:left;
+	overflow:auto;
+	margin-top:-4px;*/
+}

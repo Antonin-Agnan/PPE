@@ -1,0 +1,17 @@
+div.centre {
+    position:absolute;
+    left: 50%;
+    top: 39%;
+    width: 1000px;
+    height: 200px;
+    margin-left: -500px; /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
+}
+.Image
+{
+	margin-right: 40%;
+	margin-left: 40%;
+	position: relative;
+	width:20%;
+	height:auto;
+}
